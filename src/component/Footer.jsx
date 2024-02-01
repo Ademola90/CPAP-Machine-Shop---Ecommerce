@@ -45,7 +45,7 @@ const Footer = () => {
               placeholder="Enter your text"
               type="text"
             />
-            <button className=" absolute hover:scale-105 duration-300 ease-in lg:right-[60px] md:right-[110px] right-[70px] w-[150px] h-[35px] text-[#FFFFFF] bg-[#F0592A] rounded-full font-OpenSans">
+            <button className=" absolute hover:scale-105 duration-300 ease-in lg:right-[60px] md:right-[110px] right-[65px] w-[150px] h-[35px] text-[#FFFFFF] bg-[#F0592A] rounded-full font-OpenSans">
               Sigh Up
             </button>
           </div>
