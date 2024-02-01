@@ -366,7 +366,7 @@ const PageOne = () => {
 
       {/* Replacement Schedule */}
       <div>
-        <div>
+        <div className=" lg:mb-0 md:mb-0 mb-8">
           <Replacement replacement={replacement} />
         </div>
       </div>
