@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "../component/Navbar";
 import Hero from "../asset/Frame_45.png";
-import SecNav from "../component/SecNav";
 import imag1 from "../asset/Imagesone.png";
 import CpapMachines from "../component/CpapMachines";
 import img2 from "../asset/Imagestwo.png";
@@ -26,7 +24,6 @@ import Image23 from "../asset/image23.png";
 import LookingFor from "../component/LookingFor";
 import Rec1 from "../asset/Rectangle1.png";
 import Rec2 from "../asset/Rectangle2.png";
-import Rec3 from "../asset/Rectangle3.png";
 import LearnMore from "../component/LearnMore";
 import Companys from "../component/Companys";
 import Group1 from "../asset/Group1.png";

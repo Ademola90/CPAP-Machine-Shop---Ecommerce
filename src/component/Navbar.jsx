@@ -27,20 +27,7 @@ const Navbar = () => {
           <div className="lg:block md:block hidden">
             <Inbox />
           </div>
-
-          {/* <input
-            className=" lg:block md:block hidden w-[300px] h-[45px] border-2 border-black rounded-md"
-            placeholder="Search"
-            type="text"
-          /> */}
         </div>
-        {/* Conditionally render the search box based on the menu state */}
-
-        {/* <input
-          className=" / lg:hidden md:hidden block absolute top-44 w-[300px] h-[45px] border-2 border-black rounded-md"
-          placeholder="Search"
-          type="text"
-        /> */}
       </div>
 
       <div className=" lg:flex md:flex hidden items-center gap-5  ">
@@ -109,43 +96,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
-      {/* <div className="flex items-center gap-5"> */}
-      {/* Hamburger button using react-icons */}
-      {/* <div className="cursor-pointer" onClick={toggleMenu}>
-          <FaBars size={25} />
-        </div> */}
-
-      {/* Conditionally render menu items based on the menu state */}
-      {/* {isMenuOpen && (
-          <>
-            <div className="flex items-center gap-2">
-              <img
-                className="w-[25px] h-[25px]"
-                src="../../../assets/Frame_38_(1).png"
-                alt=""
-              />
-              <p>Blog</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <img
-                className="w-[25px] h-[25px]"
-                src="../../../assets/Frame_37.png"
-                alt=""
-              />
-              <p>Account</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <img
-                className="w-[25px] h-[25px]"
-                src="../../../assets/Frame_36.png"
-                alt=""
-              />
-              <p>Cart</p>
-            </div>
-          </>
-        )}
-      </div> */}
     </nav>
   );
 };

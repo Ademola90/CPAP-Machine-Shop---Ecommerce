@@ -56,11 +56,11 @@ const Footer = () => {
         <div>
           <div className=" lg:hidden md:hidden flex items-center pt-4">
             <input
-              className="w-[300.92px] pl-2 pr-20 h-[45px] rounded-full border-2 border-gray-400 bg-white text-black"
+              className="w-[300.92px] pl-2 pr-20 h-[45px] relative left-5 rounded-full border-2 border-gray-400 bg-white text-black"
               placeholder="Enter your text"
               type="text"
             />
-            <button className=" absolute hover:scale-105 duration-300 ease-in right-[50px] w-[150px] h-[35px] text-[#FFFFFF] bg-[#F0592A] rounded-full font-OpenSans">
+            <button className=" absolute hover:scale-105 duration-300 ease-in right-[69px] w-[150px] h-[35px] text-[#FFFFFF] bg-[#F0592A] rounded-full font-OpenSans">
               Sigh Up
             </button>
           </div>
