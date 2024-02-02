@@ -26,6 +26,7 @@ import Frame1 from "../asset/Frame1.png";
 import Frame2 from "../asset/Frame2.png";
 import Frame3 from "../asset/Frame3.png";
 import Frame4 from "../asset/Frame4.png";
+import ScrollToTop from "../component/ScrollToTop";
 
 const CpapMachines = () => {
   // Sleep
@@ -165,6 +166,7 @@ const CpapMachines = () => {
 
   return (
     <div className="  ">
+      <ScrollToTop />
       <div className=" bg-[#F3F4F8] lg:px-16 md:px-10 px-8 lg:pt-0 md:pt-0 pt-20">
         <SleepApnea sleep={sleep} />
       </div>

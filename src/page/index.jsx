@@ -36,6 +36,7 @@ import Group7 from "../asset/Group7.png";
 import Group8 from "../asset/Group8.png";
 import Group9 from "../asset/Group9.png";
 import Footer from "../component/Footer";
+import ScrollToTop from "../component/ScrollToTop";
 
 const PageOne = () => {
   // Machine
@@ -193,7 +194,7 @@ const PageOne = () => {
       btn: "Read more",
     },
     {
-      id: 1,
+      id: 3,
       img: Rec1,
       title: "Activated oxygen: A scientifically proven way to clean your CPAP",
       text: "For a continuous positive airway pressure (CPAP) machine to be effective, it needs two things from you: — Use your CPAP machine consistently, as p...",
@@ -243,8 +244,7 @@ const PageOne = () => {
 
   return (
     <div>
-      {/* <Navbar />
-      <SecNav /> */}
+      <ScrollToTop />
 
       <div
         className=" bg-no-repeat bg-center bg-cover flex justify-end lg:py-[40px] md:py-[40px] py-[80px]  items-center"

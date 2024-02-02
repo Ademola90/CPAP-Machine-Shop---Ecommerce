@@ -8,11 +8,13 @@ import SecNav from "./component/SecNav";
 import Inbox from "./component/Inbox";
 
 
+
 class App extends Component {
   render() {
     return (
       <div>
         <BrowserRouter>
+
           <Navbar />
           <SecNav />
           <div className="lg:hidden md:hidden py-2 grid justify-center items-center left-0 right-0 absolute">

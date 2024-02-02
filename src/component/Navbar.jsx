@@ -31,14 +31,14 @@ const Navbar = () => {
       </div>
 
       <div className=" lg:flex md:flex hidden items-center gap-5  ">
-        <div className="flex items-center gap-2">
+        <Link to="/cpap_machine" className="flex items-center gap-2">
           <img
             className="w-[25px] h-[25px]"
             src="../../../assets/Frame_38_(1).png"
             alt=""
           />
           <p>Blog</p>
-        </div>
+        </Link>
         <div className="flex items-center gap-2">
           <img
             className="w-[25px] h-[25px]"
