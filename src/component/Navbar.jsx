@@ -75,7 +75,7 @@ const Navbar = () => {
                 src="../../../assets/Frame_38_(1).png"
                 alt=""
               />
-              <p>Blog</p>
+              <Link to="/cpap_machine">Blog</Link>
             </div>
             <div className="flex items-center gap-2">
               <img
