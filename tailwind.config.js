@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         OpenSans: ['Open Sans', "sans-serif"],
         lora: ['Lora', 'serif']
+      },
+      colors: {
+        primary: "#615C99 ",
+        secondary: "#F0592A"
       }
     },
   },

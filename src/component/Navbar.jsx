@@ -1,11 +1,27 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Inbox from "./Inbox";
+import SignUp from "../screen/sign-up";
+import Login from "../screen/login";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [signup, setSignup] = useState(false);
+  const [login, setLogin] = useState(false);
+
+  const handleOpenSignUp = () => {
+    setSignup(true);
+    setLogin(false);
+  };
+
+  const handleOpenLogin = () => {
+    setLogin(true);
+    setSignup(false);
+  };
+
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,7 +47,10 @@ const Navbar = () => {
       </div>
 
       <div className=" lg:flex md:flex hidden items-center gap-5  ">
-        <Link to="/cpap_machine" className="flex items-center gap-2">
+        <Link
+          to="/cpap_machine"
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <img
             className="w-[25px] h-[25px]"
             src="../../../assets/Frame_38_(1).png"
@@ -39,22 +58,29 @@ const Navbar = () => {
           />
           <p>Blog</p>
         </Link>
-        <div className="flex items-center gap-2">
+        <div
+          onClick={handleOpenLogin}
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <img
             className="w-[25px] h-[25px]"
             src="../../../assets/Frame_37.png"
             alt=""
           />
-          <p>Account</p>
+          <p>Login</p>
         </div>
-        <div className=" flex items-center gap-2">
-          <img
-            className="w-[25px] h-[25px]"
-            src="../../..//assets/Frame_36.png"
-            alt=""
+        {signup && (
+          <SignUp
+            onClick={() => setSignup(false)}
+            openLogin={handleOpenLogin}
           />
-          <p>Cart</p>
-        </div>
+        )}
+        {login && (
+          <Login
+            onClick={() => setLogin(false)}
+            openSignUp={handleOpenSignUp}
+          />
+        )}
       </div>
 
       {/* Mobile screen */}
@@ -69,7 +95,7 @@ const Navbar = () => {
 
         {isMenuOpen && (
           <div className="absolute top-20 right-0 bg-white py-4 px-6 text-black w-[300px] h-auto gap-5 grid z-20 ">
-            <div className="  flex items-center gap-2">
+            <div className="  flex items-center gap-2 cursor-pointer">
               <img
                 className="w-[25px] h-[25px]"
                 src="../../../assets/Frame_38_(1).png"
@@ -77,22 +103,37 @@ const Navbar = () => {
               />
               <Link to="/cpap_machine">Blog</Link>
             </div>
-            <div className="flex items-center gap-2">
+            <div
+              onClick={handleOpenLogin}
+              className="flex items-center gap-2 cursor-pointer"
+            >
               <img
                 className="w-[25px] h-[25px]"
                 src="../../../assets/Frame_37.png"
                 alt=""
               />
-              <p>Account</p>
+              <p className=" ">Login</p>
             </div>
-            <div className="flex items-center gap-2">
+            {signup && (
+              <SignUp
+                onClick={() => setSignup(false)}
+                openLogin={handleOpenLogin}
+              />
+            )}
+            {login && (
+              <Login
+                onClick={() => setLogin(false)}
+                openSignUp={handleOpenSignUp}
+              />
+            )}
+            {/* <div className="flex items-center gap-2 cursor-pointer">
               <img
                 className="w-[25px] h-[25px]"
                 src="../../../assets/Frame_36.png"
                 alt=""
               />
               <p>Cart</p>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
